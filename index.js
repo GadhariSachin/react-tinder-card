@@ -187,7 +187,7 @@ const TinderCard = React.forwardRef(({ flickOnSwipe = true, children, onSwipe, o
   const [lastLocation, setLastLocation] = React.useState({ x: 0, y: 0, time: new Date().getTime() })
   const [mouseIsClicked, setMouseIsClicked] = React.useState(false)
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     const touchStart = (ev) => {
       ev.preventDefault()
       handleSwipeStart()
